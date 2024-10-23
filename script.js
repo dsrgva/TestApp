@@ -32,4 +32,21 @@ if (personMovieDB.count < 10){
     console.log('Произошла ошибка');
 }
 
-console.log(personMovieDB);
+
+function check(a) {
+    if (a == false) {
+        console.log(personMovieDB);
+    }
+}
+
+
+function writeYourGenres(mas){
+    for (let i = 0; i < 3; i++){
+        mas[i] = prompt(`Ваш любимый жанр под номером ${i+1}`, '');
+    }
+}
+
+writeYourGenres(personMovieDB.genres);
+
+check(personMovieDB.private);
+
